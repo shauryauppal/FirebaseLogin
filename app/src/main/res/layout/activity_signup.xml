@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#46cfe1"
+    tools:context="com.example.shaur.firebaselogin.MainActivity">
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="155dp"
+        android:hint="PASSWORD"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <EditText
+        android:id="@+id/email_register"
+        android:hint="EMAIL"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/password_register"
+        android:layout_alignEnd="@+id/password_register"
+        android:layout_alignStart="@+id/password_register"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/email_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textColor="#003399"
+        android:text="LET US REGISTER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#CCFFCC"
+        android:onClick="onRegister"
+        android:text="REGISTER" />
+</RelativeLayout>

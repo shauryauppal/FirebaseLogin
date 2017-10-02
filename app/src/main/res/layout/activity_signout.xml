@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shaur.firebaselogin.signout"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/signout_thankyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="109dp"
+        android:textColor="#FF0000"
+        android:text="Thank You For using nimble"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Signout"
+        android:background="#FF0000"
+        android:layout_margin="16dp"
+        android:onClick="onLogout"/>
+</RelativeLayout>
